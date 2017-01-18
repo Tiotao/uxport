@@ -1,0 +1,81 @@
+body, h1, h2, h3, h4, h5, h6, p, a
+  font-family: "Roboto", Helvetica, Arial, sans-serif
+a
+  color: #00B7FF
+
+color_blue = #3FA9F5
+color_pink = #FF7BAC
+color_orange = #FF931E
+color_green = #7AC943
+color_light_grey = #f5f5f5
+
+.navbar.landing-nav
+  border-radius:0px
+  margin-bottom:0px
+  background: white
+  border: none
+
+.page-title
+  font-family: "Roboto", Helvetica, Arial, sans-serif
+  font-weight: 100
+  font-size: 4em
+  padding: 1.5em 0em 0em
+
+.divider
+  background: color_blue
+  margin: 2em auto
+  height: 2px
+  width: 2em
+
+.page-subtitle
+  font-weight: 300
+  font-size: 1.5em
+  padding: 0em 0em 4em
+
+.landing-header
+  background: white
+  padding: 4em
+
+.landing-project-listing
+  background: color_light_grey
+  padding: 4em
+
+.project
+  background: white
+  min-height: 25em
+  margin: 2em
+  padding: 2em 3em
+  text-align: center
+
+  img.project-logo
+    display: block
+    width: 10em
+    margin: 2em auto
+
+  &#board-paperplane
+    border-top: 1em solid color_pink
+  &#board-pigeonlab
+    border-top: 1em solid color_orange
+  &#board-pandafan
+    border-top: 1em solid color_green
+  &#board-chinese
+    border-top: 1em solid color_blue
+.lnr
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+
+.lnr-chevron-down
+  color: color_blue;
+  /* We can use "color" for setting the color
+  of the SVG because we set its "fill" to
+  "currentColor" */
+  font-size: 2em
+  /* We can use "font-size" for changing the size
+  of the SVG because its width and height were
+  set 1em.
+  To get crisp results, use sizes that are
+  a multiple of 20; because Linearicons was
+  designed on a 20 by 20 grid. */

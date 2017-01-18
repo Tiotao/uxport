@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .container-fluid.landing-header
+    .row
+      .col-md-12.text-center
+        h1.page-title Yiwen Zhang
+        .divider
+        p.page-subtitle Experience Designer & Developer
+        p.chevron-text My Work
+        svg.lnr.lnr-chevron-down
+          use(xlink:href="#lnr-chevron-down")
+  .container-fluid.landing-project-listing
+    .container
+      .row
+        .col-md-6
+          .project#board-paperplane
+            img.project-logo(src="/images/logo-paperplane.svg")
+            h3.project-title Paper Plane
+            p.project-description Creating Visual Elements to guide player through journey
+        .col-md-6
+          .project#board-pigeonlab
+            img.project-logo(src="/images/logo-pigeonlab.svg")
+            h3.project-title PigeonLab Branding Generator
+            p.project-description Design and develop a branding generation tool with high usability
+      .row
+        .col-md-6
+          .project#board-pandafan
+            img.project-logo(src="/images/logo-pandafan.svg")
+            h3.project-title PandaFan Dashboard Redesign
+            p.project-description Redesign PandaFan’s dashboard to support new features and improve usability
+
+        .col-md-6
+          .project#board-chinese
+            img.project-logo(src="/images/logo-chinese.svg")
+            h3.project-title Fluid Chinese Character
+            p.project-description Creating a multimedia motion display that resonates with the theme of the play – loss of traditional culture
+
+ 
