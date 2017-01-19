@@ -18,5 +18,10 @@ router.get('/projects/chinese', function(req, res, next) {
   res.render('chinese');
 })
 
+router.get('/projects/pigeonlab', function(req, res, next) {
+  res.render('pigeonlab');
+})
+
+
 
 module.exports = router;

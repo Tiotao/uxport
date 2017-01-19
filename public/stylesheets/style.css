@@ -42,6 +42,9 @@ body {
 #project-chinese-header .divider {
   background: #3fa9f5;
 }
+#project-pigeonlab-header .divider {
+  background: #ff931e;
+}
 .project-page-header img.project-logo {
   display: block;
   width: 10em;
@@ -129,6 +132,9 @@ body {
 #project-chinese-content .section-title h3 {
   color: #3fa9f5;
 }
+#project-pigeonlab-content .section-title h3 {
+  color: #ff931e;
+}
 .project-meta p {
   font-size: 1.2em;
   font-weight: 300;
@@ -145,6 +151,9 @@ body {
 }
 .project-meta#project-chinese-meta .lnr {
   color: #3fa9f5;
+}
+.project-meta#project-pigeonlab-meta .lnr {
+  color: #ff931e;
 }
 .lnr {
   display: inline-block;
@@ -165,6 +174,14 @@ body {
   To get crisp results, use sizes that are
   a multiple of 20; because Linearicons was
   designed on a 20 by 20 grid. */
+}
+.project-tag li {
+  font-size: 0.8em;
+  border: 1px solid;
+  margin: 0.5em 0.5em 0em;
+  color: #999;
+  border-radius: 10px;
+  padding: 0.1em 1em;
 }
 .cd-image-container {
   position: relative;
