@@ -24,8 +24,13 @@ body {
 .page-title {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
-  font-size: 4em;
-  padding: 1.5em 0em 0em;
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  .page-title {
+    font-size: 4em;
+    padding: 1.5em 0em 0em;
+  }
 }
 .divider {
   background: #3fa9f5;
@@ -47,29 +52,49 @@ body {
 }
 .project-page-header img.project-logo {
   display: block;
-  width: 10em;
+  width: 3em;
   margin: 0em auto;
   padding-top: 1.5em;
+}
+@media (min-width: 768px) {
+  .project-page-header img.project-logo {
+    width: 10em;
+  }
 }
 .project-page-header .page-title {
   padding: 0em 0em 0em;
 }
 .page-subtitle {
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1em;
   padding: 0em 0em 2em;
+}
+@media (min-width: 768px) {
+  .page-subtitle {
+    font-size: 1.5em;
+  }
 }
 .page-header {
   background: #fff;
-  padding: 4em;
+  padding: 1em;
   margin: 0px;
   border-bottom: none;
+}
+@media (min-width: 768px) {
+  .page-header {
+    padding: 4em;
+  }
 }
 hr {
   border-top: 1px dashed #eee;
 }
 .landing-project-listing {
-  padding: 4em;
+  padding: 0em;
+}
+@media (min-width: 768px) {
+  .landing-project-listing {
+    padding: 4em;
+  }
 }
 .project:hover {
   transform: scale(1.02);
@@ -77,19 +102,31 @@ hr {
 }
 .project {
   background: #fff;
-  min-height: 25em;
-  margin: 2em;
-  padding: 2em 3em;
+  margin: 1em;
+  padding: 1em 1em;
   text-align: center;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   box-shadow: none;
   border: 1px solid #eee;
 }
+@media (min-width: 768px) {
+  .project {
+    padding: 2em 3em;
+    min-height: 25em;
+    margin: 2em;
+  }
+}
 .project img.project-logo {
   display: block;
-  width: 10em;
-  margin: 2em auto;
+  width: 5em;
+  margin: 1em auto;
+}
+@media (min-width: 768px) {
+  .project img.project-logo {
+    width: 10em;
+    margin: 2em auto;
+  }
 }
 .project#board-paperplane {
   border-top: 5px dashed #ff7bac;
@@ -103,13 +140,17 @@ hr {
 .project#board-chinese {
   border-top: 5px dashed #3fa9f5;
 }
-.process-content-wrapper {
-  height: 280px;
+@media (min-width: 768px) {
+  .process-content-wrapper {
+    height: 280px;
+  }
 }
-.process-content-container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+@media (min-width: 768px) {
+  .process-content-container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 .project-section {
   padding-bottom: 4em;

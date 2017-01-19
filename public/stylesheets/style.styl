@@ -21,8 +21,10 @@ color_light_grey = #f5f5f5
 .page-title
   font-family: "Roboto", Helvetica, Arial, sans-serif
   font-weight: 100
-  font-size: 4em
-  padding: 1.5em 0em 0em
+  font-size: 2em
+  @media (min-width: 768px)
+    font-size: 4em
+    padding: 1.5em 0em 0em
 
 .divider
   background: color_blue
@@ -46,28 +48,39 @@ color_light_grey = #f5f5f5
 .project-page-header 
   img.project-logo
     display: block
-    width: 10em
+    width: 3em
     margin: 0em auto
     padding-top: 1.5em
+    @media (min-width: 768px)
+       width: 10em
   .page-title
     padding: 0em 0em 0em
 
 .page-subtitle
   font-weight: 300
-  font-size: 1.5em
+  font-size: 1em
   padding: 0em 0em 2em
+  @media (min-width: 768px)
+    font-size: 1.5em
+    
 
 .page-header
   background: white
-  padding: 4em
+  padding: 1em
   margin: 0px
   border-bottom: none
+  @media (min-width: 768px)
+    padding: 4em
 
 hr 
   border-top: 1px dashed #eee;
 
 .landing-project-listing
-  padding: 4em
+  padding: 0em
+  @media (min-width: 768px)
+    padding: 4em
+
+
 
 .project:hover
   transform: scale(1.02);
@@ -75,19 +88,25 @@ hr
 
 .project
   background: white
-  min-height: 25em
-  margin: 2em
-  padding: 2em 3em
+  margin: 1em
+  padding: 1em 1em
   text-align: center
   cursor: pointer;
   transition: all .5s ease-in-out;
   box-shadow: none
   border: 1px solid #eee;
+  @media (min-width: 768px)
+     padding: 2em 3em
+     min-height: 25em
+     margin: 2em
 
   img.project-logo
     display: block
-    width: 10em
-    margin: 2em auto
+    width: 5em
+    margin: 1em auto
+    @media (min-width: 768px)
+       width: 10em
+       margin: 2em auto
 
   &#board-paperplane
     border-top: 5px dashed color_pink
@@ -99,12 +118,14 @@ hr
     border-top: 5px dashed color_blue
 
 .process-content-wrapper
-  height: 280px
+  @media (min-width: 768px)
+    height: 280px
 
 .process-content-container
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  @media (min-width: 768px)
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 
 .project-section
   padding-bottom: 4em;
