@@ -1,0 +1,113 @@
+extends layout
+
+block content
+  .container-fluid.page-header.project-page-header#project-chinese-header
+    .row
+      .col-md-12.text-center
+        img.project-logo(src="/images/logo-chinese.svg")
+        h1.page-title Fluid Chinese Character Motion Design
+        .divider
+        p.page-subtitle  Create a multimedia motion display that resonates with the theme of the play – loss of traditional culture
+  .container.project-meta#project-chinese-meta
+    .row
+      .col-md-4.text-center
+        svg.lnr.lnr-clock
+          use(xlink:href="#lnr-clock")
+        p 2 Weeks
+      .col-md-4.text-center
+        svg.lnr.lnr-users
+          use(xlink:href="#lnr-users")
+        p Individual
+      .col-md-3.text-center
+        svg.lnr.lnr-magic-wand
+          use(xlink:href="#lnr-magic-wand")
+        p Multimedia Designer
+
+  #project-chinese-content
+    hr
+    .container-fluid
+        .container.project-section.overview
+            .row.section-title
+                .col-md-12.text-center
+                    h3 Overview
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    p Drama Box is a Singapore-based theatre company. Kopitiam is one of their theater production took place in Esplanade, Singapore. As the multimedia designer of the production, my task is to create a multimedia motion display that revolves around the theme of the play.
+
+
+    hr
+    .container-fluid
+        .container.project-section.solution
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Solution
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p I created a video clip that features raining Chinese Characters.
+                        img(src="/images/chinese-solution-1.gif")
+                    
+    hr
+    .container-fluid
+      .container.project-section.process
+        .row.section-title
+                .col-md-12.text-center
+                    h3 Process
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    .row
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Requirement Gathering
+                                p The play is about the conflict between tradition and modern. After discussing with the director of the play, Han Xuemei, I decided to go towards the direction of having Chinese character rains from the sky and eventually dissolve on the group. The motion of falling and dissolving symbolizes the loss of Chinese culture in Singapore.
+
+
+                        .col-md-6
+                            img(src="/images/chinese-process-1.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Low-fidelity Design
+                                p I started with sketching the low fidelity prototype. I drew the key frames that illustrates the falling and dissolving of Chinese character.
+                        .col-md-6
+                            img(src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/a4455b42161253.57c34162c118e.png")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Quick Prototype with WebGL
+                                p To simulate the falling, I used WebGL. I started with rigid-body physics simulation.
+                        .col-md-6
+                            img(src="/images/chinese-process-3.svg")
+                    .row
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 High Fidelity Design
+                                p Applying threshold and blur filters in After Effects, the rigid-body particles looks like liquid
+
+                        .col-md-6
+                            img(src="/images/chinese-process-4.svg")
+                    .row
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Feedback and Improvements
+                                p Based on director’s feedback, I added collapsing effect when the characters are falling
+                        .col-md-6
+                            img(src="/images/chinese-process-5.svg")
+                    
+                        
+
+                    
+    hr
+    .container-fluid
+        .container.project-section.conclusion
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Conclusion
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p Redesigning PandaFan’s dashboard allows me to practices the design principles and thinking process I learnt in my Interaction Design class. The design pipeline I practiced made my design more user centric – every design decision is derived from user requirement. It is a good learning experience for me as I had the chance to practice what I learnt at school beyond textbook and school projects.
+
+

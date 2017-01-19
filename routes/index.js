@@ -6,4 +6,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/projects/paperplane', function(req, res, next) {
+  res.render('paperplane');
+})
+
+router.get('/projects/pandafan', function(req, res, next) {
+  res.render('pandafan');
+})
+
+router.get('/projects/chinese', function(req, res, next) {
+  res.render('chinese');
+})
+
+
 module.exports = router;

@@ -1,0 +1,179 @@
+extends layout
+
+block content
+  .container-fluid.page-header.project-page-header#project-pandafan-header
+    .row
+      .col-md-12.text-center
+        img.project-logo(src="/images/logo-pandafan.svg")
+        h1.page-title PandaFan Dashboard Redesign
+        .divider
+        p.page-subtitle Redesign PandaFan’s dashboard to support new features and improve usability
+  .container.project-meta#project-pandafan-meta
+    .row
+      .col-md-4.text-center
+        svg.lnr.lnr-clock
+          use(xlink:href="#lnr-clock")
+        p 4 Weeks
+      .col-md-4.text-center
+        svg.lnr.lnr-users
+          use(xlink:href="#lnr-users")
+        p Individual
+      .col-md-3.text-center
+        svg.lnr.lnr-magic-wand
+          use(xlink:href="#lnr-magic-wand")
+        p UX Designer
+        p Front End Developer
+  #project-pandafan-content
+    hr
+    .container-fluid
+        .container.project-section.overview
+            .row.section-title
+                .col-md-12.text-center
+                    h3 Overview
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    p PandaFan is an online VPN service provider that helps users in mainland China bypass the Great Fire Wall and access banned sites freely. As UX Designer, I am contracted to redesign their user interface to support more features and improve usability.
+
+    hr
+    .container-fluid
+        .container.project-section.solution
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Solution
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p I redesigned the dashboard interface and developed the web template using Foundation. The web template adopts responsive design.
+                        p Following changes has been made compare to the old version.
+
+                .row.section-content
+                    .col-md-4.col-md-offset-2
+                        //- figure.cd-image-container
+                        //-     img(src="/images/pandafan-solution-1b.svg")
+                        //-     span.cd-image-label(data-type="original") Redesigned
+                        //-     .cd-resize-img
+                        //-         img(src="/images/pandafan-solution-1a.svg")
+                        //-         span.cd-image-label(data-type="modified") Original
+                        //-     span.cd-handle
+                        img(src="/images/pandafan-solution-1.svg")
+                        p Re-order top feature
+                    .col-md-4
+                        img(src="/images/pandafan-solution-2.svg")
+                        p Add visual indication for service status
+                    .col-md-4.col-md-offset-2
+                        img(src="/images/pandafan-solution-3.svg")
+                        p Adding Quick Setting options for advanced user
+                    .col-md-4
+                        img(src="/images/pandafan-solution-4.svg")
+                        p Adding help session and onboarding experience for first-time user
+                    //- .col-md-4.col-md-offset-2
+                    //-     img(src="/images/paperplane-solution-3.svg")
+                    //-     p Adding Feature Hierarchy  
+                    
+    hr
+    .container-fluid
+      .container.project-section.process
+        .row.section-title
+                .col-md-12.text-center
+                    h3 Process
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    .row
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Research Current Product
+                                p The focus of the project is to improve usability. Therefore, I started the process with usability test of the old version. Existing problems in usability includes:
+                                ul
+                                    li User do not know where to seek help
+                                    li There are too many pop-overs that potentially confuses user
+                                    li Current design does not reflect the new feature hierarchy
+
+                        .col-md-6
+                            img(src="/images/pandafan-process-1.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Contextual Inquiry & User Stories
+                                p Based on usability test, I proposed various user stories and also conducted contextual inquiry 
+                        .col-md-6
+                            img(src="/images/pandafan-process-2.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Wireframing
+                                p A wireframe model was then made for another round of user testing. Users are asked to go through the tasks.
+                        .col-md-6
+                            img(src="/images/pandafan-process-3.svg")
+                    
+                    .row
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 High Fidelity Design
+                                p A high fidelity design was created using Illustrator based on the feedback gathered from user testing
+                        .col-md-6
+                            img(src="/images/pandafan-process-4.svg")
+                        
+                    .row
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Prototyping
+                                p Finally, I turn the design into code and hand it over to back-end engineer for back-end integration.
+                        .col-md-6
+                            img(src="/images/pandafan-process-5.svg")
+                        
+                    
+                        
+
+                    
+    hr
+    .container-fluid
+        .container.project-section.comparision
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Comparision of Interface
+                .row.section-content
+                    .col-md-8.col-md-offset-2.text-center
+                        
+                        figure.cd-image-container
+                            img(src="/images/pandafan-compare-1a.svg")
+                            span.cd-image-label(data-type="original") Original
+                            .cd-resize-img
+                                img(src="/images/pandafan-compare-1b.svg")
+                                span.cd-image-label(data-type="modified") 
+                            span.cd-handle
+                        h4 Dashboard
+                    .col-md-8.col-md-offset-2.text-center
+                        
+                        figure.cd-image-container
+                            img(src="/images/pandafan-compare-2a.svg")
+                            span.cd-image-label(data-type="original") Original
+                            .cd-resize-img
+                                img(src="/images/pandafan-compare-2b.svg")
+                                span.cd-image-label(data-type="modified") 
+                            span.cd-handle
+                        h4 Settings
+                    .col-md-8.col-md-offset-2.text-center
+                        
+                        figure.cd-image-container
+                            img(src="/images/pandafan-compare-3a.svg")
+                            span.cd-image-label(data-type="original") Original
+                            .cd-resize-img
+                                img(src="/images/pandafan-compare-3b.svg")
+                                span.cd-image-label(data-type="modified") 
+                            span.cd-handle
+                        h4 Plan Details
+
+    hr
+    .container-fluid
+        .container.project-section.conclusion
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Conclusion
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p Redesigning PandaFan’s dashboard allows me to practices the design principles and thinking process I learnt in my Interaction Design class. The design pipeline I practiced made my design more user centric – every design decision is derived from user requirement. It is a good learning experience for me as I had the chance to practice what I learnt at school beyond textbook and school projects.
+
+

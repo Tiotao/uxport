@@ -1,0 +1,130 @@
+extends layout
+
+block content
+  .container-fluid.page-header.project-page-header#project-paperplane-header
+    .row
+      .col-md-12.text-center
+        img.project-logo(src="/images/logo-paperplane.svg")
+        h1.page-title Paper Plane
+        .divider
+        p.page-subtitle Create Visual Elements to guide player through journey
+  .container.project-meta#project-paperplane-meta
+    .row
+      .col-md-4.text-center
+        svg.lnr.lnr-clock
+          use(xlink:href="#lnr-clock")
+        p 2 Weeks
+      .col-md-4.text-center
+        svg.lnr.lnr-users
+          use(xlink:href="#lnr-users")
+        p Team of 5
+      .col-md-3.text-center
+        svg.lnr.lnr-magic-wand
+          use(xlink:href="#lnr-magic-wand")
+        p Experience Designer
+        p Lead Developer
+  #project-paperplane-content
+    hr
+    .container-fluid
+        .container.project-section.overview
+            .row.section-title
+                .col-md-12.text-center
+                    h3 Overview
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    p Paper Plane is a VR experience I created with a team of five people during the course of Building Virtual Worlds in Entertainment Technology Center, Carnegie Mellon University. It is a free flying experience in Virtual Reality. As the game designer, my job is to design the game level and user interaction. As the developer, my job is to program game logics and integrate the game with Oculus Rift and Leap Motion.
+    hr
+    .container-fluid
+        .container.project-section.problem
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Problem
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        img(src="/images/paperplane-problem.svg")
+                        p Paper Plane is a free-flying VR experience, which means the player will have full freedom to fly around. When players are having that kind of freedom, we, as the game designer and develop will have very little control over what they are going to see and interact with. This not only increase workload in development, but also causes inconsistently gaming experience across players. Hence in Paper Plane, the challenge is to mind-trick the player to fly along a designed route without them noticing any form of control.
+    hr
+    .container-fluid
+        .container.project-section.solution
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Solution
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p I made following design decisions.
+                .row.section-content
+                    .col-md-4.col-md-offset-2
+                        img(src="/images/paperplane-solution-1.svg")
+                        p I designed the ideal flying route and placed waypoint beacons along the route.
+                    .col-md-4
+                        img(src="/images/paperplane-solution-2.svg")
+                        p There are also various visual elements such as rainy clouds and rainbows that suggest different messages. 
+                    .col-md-4.col-md-offset-2
+                        img(src="/images/paperplane-solution-3.svg")
+                        p Other NPC Planes
+                    
+    hr
+    .container-fluid
+      .container.project-section.process
+        .row.section-title
+                .col-md-12.text-center
+                    h3 Process
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    p The key concept behind my design is Indirect Control. Humans are prone to visual cues, especially color and motion.
+                .col-md-8.col-md-offset-2
+                    .row
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Color
+                                p We tend to group similar colors and their associated message together. When the paper plane and the beacon are in the same color, most of the player think that they belong to the same category, it is natural to fly towards beacon.
+                        .col-md-6
+                            img(src="/images/paperplane-process-1.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Playtesting
+                                p I performed A/B testing to see if player will be more stick to the ideal path if there are already other planes flying along that path.
+                                p Group A has no flying planes
+                                p Group B has flying planes
+                                p The result is not surprising. Player in group B are more likely to travel along the designed path. I conducted interview after play testing.
+                                p The play testing result is aligned with human psychology which humans are natural follower.
+                        .col-md-6
+                            img(src="/images/paperplane-process-4.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Life Experience
+                                p I use rainy clouds and rainbows which the player is very familiar with as part of the route design. Because of the familiarity, the player can infer the message behind these things from life experiences. It is intuitive for player to avoid rainy clouds and fly towards rainbows based on common sense.
+                        .col-md-6
+                            img(src="/images/paperplane-process-2.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Motion
+                                p Motion distracts our eyes. Having signal effect on top of the beacon creates a point of interest.
+                        .col-md-6
+                            img(src="/images/paperplane-process-3.gif")
+                        
+                    
+                    
+                        
+
+                    
+    hr
+    .container-fluid
+        .container.project-section.conclusion
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Conclusion
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p Experience Design in Game and in other platforms shares same principles. Know the end user, do frequent user testing, and understand basic human psychology are fundamental. My experience in UI/UX Design in the past contributed a lot in the design process of Paper Plane. However, there are also failed cases due to the difference in mediums (web application vs. virtual reality). Playtesting helped me to identify those failed cases and suggest possible improvements.
+
+
