@@ -1,0 +1,156 @@
+extends layout
+
+block content
+  .container-fluid.page-header.project-page-header#project-pigeonlab-header
+    .row
+      .col-md-12.text-center
+        img.project-logo(src="/images/logo-pigeonlab.svg")
+        h1.page-title PigeonLab Custom Branding Generator
+        .divider
+        p.page-subtitle Design and develop a branding generation tool with high usability.
+  .container.project-meta#project-pigeonlab-meta
+    .row
+      .col-md-4.text-center
+        svg.lnr.lnr-clock
+          use(xlink:href="#lnr-clock")
+        p 1 Year
+      .col-md-4.text-center
+        svg.lnr.lnr-users
+          use(xlink:href="#lnr-users")
+        p Individual
+      .col-md-3.text-center
+        svg.lnr.lnr-magic-wand
+          use(xlink:href="#lnr-magic-wand")
+        p UX Designer
+        p Full Stack Developer
+  #project-pigeonlab-content
+    hr
+    .container-fluid
+        .container.project-section.overview
+            .row.section-title
+                .col-md-12.text-center
+                    h3 Overview
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    p PigeonLab is a start up company located in Singapore. Their key product is a web application that provides interactive Q&A experience for various events including World Economic Forum. When the product is used in external events, the client often request to feature client’s branding on the web application. As the web development intern, I built an automation tool to support quick branding generation. I also refine the UI/UX of the tool so that both development side and business side can use the tool without much instruction.
+    hr
+    .container-fluid
+        .container.project-section.solution
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Solution
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p I designed and developed Branding Generator which support following feature:
+                .row.section-content
+                    .col-md-4.col-md-offset-2
+                        img(src="/images/pigeonlab-solution-4.svg")
+                        p One Click Branding Generation
+                    .col-md-4
+                        img(src="/images/pigeonlab-solution-1.svg")
+                        p Live Preview
+                    .col-md-4.col-md-offset-2
+                        img(src="/images/pigeonlab-solution-2.svg")
+                        p AWS integration
+
+                    .col-md-4
+                        img(src="/images/pigeonlab-solution-3.svg")
+                        p Short cuts
+
+                    
+
+                    
+    hr
+    .container-fluid
+      .container.project-section.process
+        .row.section-title
+                .col-md-12.text-center
+                    h3 Process
+            .row.section-content
+                .col-md-8.col-md-offset-2
+                    p This is a self initiated project. During the first week of my internship, I discovered that the co-founder of the company often spent a lot of time modifying CSS files for the web application. Most of the time he is doing repeating work, such as changing color value, modifying header height, etc. I believe this process can be automated using code. I told him about my thoughts and started the project – creating an automation tool that generates customized CSS file based on user inputs.
+                .col-md-8.col-md-offset-2
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Define Target User
+                                p I started the project with identifying my user group. My target user is my colleague in business team who his little engineering background.
+
+                        .col-md-6
+                            img(src="/images/pigeonlab-process-1.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Statistic Research
+                                p I read through various CSS files that are used for branding, wrote a Python script to compare their differences and figured out most common modified css style.
+                        .col-md-6
+                            img(src="/images/pigeonlab-process-2.svg")
+                    
+                    .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Observation
+                                p I also combine the statistics research with observation. I observed a few round of manual branding creation and recorded the basic workflow.
+
+                        .col-md-6
+                            img(src="/images/pigeonlab-process-3.svg")
+                     .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Quick Prototyping
+                                p A quick prototype was made after requirement gathering.
+
+                        .col-md-6
+                            img(src="/images/pigeonlab-process-4.svg")
+                     .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Usability Testing
+                                p The project moves on to the next stage: improve the usability of the tool. I started with conducting user testing. I distributed the generator to my colleague of the company. They used the generator to create brandings based on customer requirements. I compared customer’s requirements with the brandings they generated, and also take their feedback into account.
+
+
+                        .col-md-6
+                            img(src="/images/pigeonlab-process-5.svg")
+                     .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Iterations and Refinement
+                                p A few more user stories were proposed which leads to new features and changes in UI
+
+                        .col-md-6
+                            img(src="/images/pigeonlab-process-6.svg")
+                     .row
+                        
+                        .col-md-6.process-content-wrapper
+                            .process-content-container
+                                h4 Evaluation
+                                p After iterations of user testing and refinement, the business team started to use the generator I developed. Generating one custom branding used to take an front end engineer one hour. With the tool I made, anyone can generate a branding in 5 minutes.
+
+                        .col-md-6
+                            img(src="/images/pigeonlab-process-7.svg")
+                        
+                    
+                    
+                        
+
+                    
+    hr
+    .container-fluid
+        .container.project-section.conclusion
+            .row.section-title
+                    .col-md-12.text-center
+                        h3 Conclusion
+                .row.section-content
+                    .col-md-8.col-md-offset-2
+                        p Observation is the key to successful design. In designing and developing the custom branding generator, I observe my stakeholder in every stage of development. Regardless it was requirement gathering, prototyping, development or iterations of refinement. In designing such a complicated tool, prototyping is always helpful. It helped me to have a preview of the product and understand the scale of the project. With quick prototyping, I can also get feedbacks from my target user. At the end of the day, I am really happy that this self-initiated project improved company’s working efficiency and was widely used among the team.
+
+
+
