@@ -7,19 +7,19 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/projects/paperplane', function(req, res, next) {
-  res.render('paperplane');
+  res.render('paperplane', {path: req.path});
 })
 
 router.get('/projects/pandafan', function(req, res, next) {
-  res.render('pandafan');
+  res.render('pandafan', {path: req.path});
 })
 
 router.get('/projects/chinese', function(req, res, next) {
-  res.render('chinese');
+  res.render('chinese', {path: req.path});
 })
 
 router.get('/projects/pigeonlab', function(req, res, next) {
-  res.render('pigeonlab');
+  res.render('pigeonlab', {path: req.path});
 })
 
 

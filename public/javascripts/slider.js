@@ -1,3 +1,14 @@
+
+$(function(){
+    var path = $('body').attr('data-path');
+    if (path.indexOf('project') !== -1 || path == "/" || path == "undefined") {
+        $('nav li a#projects-nav').addClass('active');
+    } else {
+        $('nav li a[href='+path+']').addClass('active');
+    }
+    
+});
+
 jQuery(document).ready(function($){
     var dragging = false,
         scrolling = false,

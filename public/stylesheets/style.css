@@ -65,8 +65,10 @@ body {
   margin: 0px;
   border-bottom: none;
 }
+hr {
+  border-top: 1px dashed #eee;
+}
 .landing-project-listing {
-  background: #f5f5f5;
   padding: 4em;
 }
 .project:hover {
@@ -82,6 +84,7 @@ body {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   box-shadow: none;
+  border: 1px solid #eee;
 }
 .project img.project-logo {
   display: block;
@@ -89,16 +92,16 @@ body {
   margin: 2em auto;
 }
 .project#board-paperplane {
-  border-top: 1em solid #ff7bac;
+  border-top: 5px dashed #ff7bac;
 }
 .project#board-pigeonlab {
-  border-top: 1em solid #ff931e;
+  border-top: 5px dashed #ff931e;
 }
 .project#board-pandafan {
-  border-top: 1em solid #7ac943;
+  border-top: 5px dashed #7ac943;
 }
 .project#board-chinese {
-  border-top: 1em solid #3fa9f5;
+  border-top: 5px dashed #3fa9f5;
 }
 .process-content-wrapper {
   height: 280px;
@@ -174,6 +177,34 @@ body {
   To get crisp results, use sizes that are
   a multiple of 20; because Linearicons was
   designed on a 20 by 20 grid. */
+}
+.landing-nav.navbar-default .navbar-nav li a {
+  color: #333;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0.5em;
+  margin-left: 1em;
+  margin-right: 1em;
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid #fff;
+}
+.landing-nav.navbar-default .navbar-nav li a.active,
+.landing-nav.navbar-default .navbar-nav li a:hover {
+  border-bottom: 2px solid #333;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+.navbar-default .navbar-collapse {
+  border: none;
+}
+@media (min-width: 768px) {
+  .navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+  }
 }
 .project-tag li {
   font-size: 0.8em;

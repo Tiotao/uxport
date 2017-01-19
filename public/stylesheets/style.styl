@@ -63,9 +63,10 @@ color_light_grey = #f5f5f5
   margin: 0px
   border-bottom: none
 
+hr 
+  border-top: 1px dashed #eee;
 
 .landing-project-listing
-  background: color_light_grey
   padding: 4em
 
 .project:hover
@@ -81,6 +82,7 @@ color_light_grey = #f5f5f5
   cursor: pointer;
   transition: all .5s ease-in-out;
   box-shadow: none
+  border: 1px solid #eee;
 
   img.project-logo
     display: block
@@ -88,13 +90,13 @@ color_light_grey = #f5f5f5
     margin: 2em auto
 
   &#board-paperplane
-    border-top: 1em solid color_pink
+    border-top: 5px dashed color_pink
   &#board-pigeonlab
-    border-top: 1em solid color_orange
+    border-top: 5px dashed color_orange
   &#board-pandafan
-    border-top: 1em solid color_green
+    border-top: 5px dashed color_green
   &#board-chinese
-    border-top: 1em solid color_blue
+    border-top: 5px dashed color_blue
 
 .process-content-wrapper
   height: 280px
@@ -178,6 +180,32 @@ color_light_grey = #f5f5f5
   a multiple of 20; because Linearicons was
   designed on a 20 by 20 grid. */
 
+.landing-nav.navbar-default .navbar-nav li a
+  color: #333
+  text-transform: uppercase
+  cursor: pointer
+  padding-left: 0
+  padding-right: 0
+  padding-bottom: 0.5em
+  margin-left: 1em
+  margin-right: 1em
+  transition: all .5s ease-in-out
+  border-bottom: 2px solid white;
+
+  &.active, &:hover
+    border-bottom: 2px solid #333;
+
+.navbar-default .navbar-toggle
+  border: none
+
+.navbar-default .navbar-collapse
+  border:none
+
+@media (min-width: 768px)
+  .navbar-right .dropdown-menu
+      right: auto;
+      left: 0;
+  
 
 .project-tag
   li 

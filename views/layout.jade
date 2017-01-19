@@ -9,9 +9,25 @@ html
     script(src="/js/jquery.min.js")
     script(src="/js/bootstrap.min.js")
     script(src="/javascripts/slider.js")
-  body
-    nav.navbar.navbar-inverse.landing-nav
+  body(data-path="#{path}")
+    nav.navbar.navbar-default.landing-nav
       .container-fluid
         .navbar-header
+          button.navbar-toggle(type="button" data-toggle="collapse" data-target="#landing-nav")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        .navbar-collapse.collapse#landing-nav
+          ul.nav.navbar-nav.navbar-right
+           
+            li
+              a#projects-nav(href="/") Projects
+                
+            li 
+              a(href="skills") Skills
+            li 
+              a(href="about") About Me
+            li 
+              a(href="contact")) Contact
 
     block content
