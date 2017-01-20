@@ -15,10 +15,15 @@ a {
 body {
   font-size: 16px;
 }
+canvas.particles-js-canvas-el {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
 .navbar.landing-nav {
   border-radius: 0px;
   margin-bottom: 0px;
-  background: #fff;
+  background: none;
   border: none;
 }
 .page-title {
@@ -75,7 +80,7 @@ body {
   }
 }
 .page-header {
-  background: #fff;
+  background: none;
   padding: 1em;
   margin: 0px;
   border-bottom: none;

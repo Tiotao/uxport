@@ -1,51 +1,54 @@
 extends layout
 
 block content
-  .container-fluid.page-header
-    .row
-      .col-md-12.text-center
-        h1.page-title Yiwen Zhang
-        .divider
-        p.page-subtitle Experience Designer & Developer
-        p.chevron-text My Work
-        svg.lnr.lnr-chevron-down
-          use(xlink:href="#lnr-chevron-down")
-  .container-fluid.landing-project-listing
-    .container
+  #particles-js
+    .container-fluid.page-header
       .row
-        .col-md-6
-          .project#board-paperplane(onclick="window.location='projects/paperplane/';")
-            img.project-logo(src="/images/logo-paperplane.svg")
-            h3.project-title Paper Plane
-            p.project-description Creating Visual Elements to guide player through journey
-            ul.list-inline.project-tag
-              li VIRTUAL REALITY
-              li UI/UX
-              li GAME DEV
-        .col-md-6
-          .project#board-pandafan(onclick="window.location='projects/pandafan/';")
-            img.project-logo(src="/images/logo-pandafan.svg")
-            h3.project-title PandaFan Dashboard Redesign
-            p.project-description Redesign PandaFan’s dashboard to support new features and improve usability
-            ul.list-inline.project-tag
-              li UI/UX
-              li WEB DEV
+        .col-md-12.text-center
+          h1.page-title Yiwen Zhang
+          .divider
+          p.page-subtitle Experience Designer & Developer
+          p.chevron-text My Work
+          svg.lnr.lnr-chevron-down
+            use(xlink:href="#lnr-chevron-down")
+    .container-fluid.landing-project-listing
+      .container
+        .row
+          .col-md-6
+            .project#board-paperplane(onclick="window.location='projects/paperplane/';")
+              img.project-logo(src="/images/logo-paperplane.svg")
+              h3.project-title Paper Plane
+              p.project-description Creating Visual Elements to guide player through journey
+              ul.list-inline.project-tag
+                li VIRTUAL REALITY
+                li UI/UX
+                li GAME DEV
+          .col-md-6
+            .project#board-pandafan(onclick="window.location='projects/pandafan/';")
+              img.project-logo(src="/images/logo-pandafan.svg")
+              h3.project-title PandaFan Dashboard Redesign
+              p.project-description Redesign PandaFan’s dashboard to support new features and improve usability
+              ul.list-inline.project-tag
+                li UI/UX
+                li WEB DEV
 
-        .col-md-6
-          .project#board-chinese(onclick="window.location='projects/chinese/';")
-            img.project-logo(src="/images/logo-chinese.svg")
-            h3.project-title Fluid Chinese Character
-            p.project-description Creating a multimedia motion display that resonates with the theme of the play – loss of traditional culture
-            ul.list-inline.project-tag
-              li EXPERIENCE DESIGN
-              li COMPUTER GRAPHICS
-        .col-md-6
-          .project#board-pigeonlab(onclick="window.location='projects/pigeonlab/';")
-            img.project-logo(src="/images/logo-pigeonlab.svg")
-            h3.project-title PigeonLab Branding Generator
-            p.project-description Design and develop a branding generation tool with high usability
-            ul.list-inline.project-tag
-              li PRODUCT DESIGN
-              li UI/UX
-
- 
+          .col-md-6
+            .project#board-chinese(onclick="window.location='projects/chinese/';")
+              img.project-logo(src="/images/logo-chinese.svg")
+              h3.project-title Fluid Chinese Character
+              p.project-description Creating a multimedia motion display that resonates with the theme of the play – loss of traditional culture
+              ul.list-inline.project-tag
+                li EXPERIENCE DESIGN
+                li COMPUTER GRAPHICS
+          .col-md-6
+            .project#board-pigeonlab(onclick="window.location='projects/pigeonlab/';")
+              img.project-logo(src="/images/logo-pigeonlab.svg")
+              h3.project-title PigeonLab Branding Generator
+              p.project-description Design and develop a branding generation tool with high usability
+              ul.list-inline.project-tag
+                li PRODUCT DESIGN
+                li UI/UX
+  script(src="/javascripts/particles-settings.js")
+  script(src="/js/particles.min.js")
+      
+  
