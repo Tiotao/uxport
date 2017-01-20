@@ -23,5 +23,8 @@ router.get('/projects/pigeonlab', function(req, res, next) {
 })
 
 
+router.get('/skills', function(req, res, next) {
+  res.render('skills', {path: req.path});
+})
 
 module.exports = router;

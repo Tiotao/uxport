@@ -4,7 +4,7 @@ $(function(){
     if (path.indexOf('project') !== -1 || path == "/" || path == "undefined") {
         $('nav li a#projects-nav').addClass('active');
     } else {
-        $('nav li a[href='+path+']').addClass('active');
+        $('nav li a[href="'+path+'"]').addClass('active');
     }
     
 });
