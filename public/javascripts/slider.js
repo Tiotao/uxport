@@ -1,4 +1,6 @@
 
+console.log("Hey yo. This site was done in three days.");
+
 $(function(){
     var path = $('body').attr('data-path');
     if (path.indexOf('project') !== -1 || path == "/" || path == "undefined") {
