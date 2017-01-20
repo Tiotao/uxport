@@ -10,7 +10,11 @@ a {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 a {
-  color: #00b7ff;
+  color: #ac88c3;
+  transition: all 0.5s ease-in-out;
+}
+a:hover {
+  color: #ac88c3;
 }
 body {
   font-size: 16px;
@@ -195,6 +199,65 @@ hr {
 .skills-nav#developer-nav>a {
   color: #3fa9f5;
   cursor: pointer;
+}
+.about-section {
+  margin-bottom: 4em;
+}
+.about-section p {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+.about-section h4 {
+  font-weight: 300;
+}
+.about-section h4 span {
+  font-weight: 500;
+}
+.about-section h2 {
+  font-weight: 300;
+}
+.about-section .lnr {
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: #ac88c3;
+}
+img.me {
+  border-radius: 100%;
+}
+#linkedin-contact,
+#facebook-contact,
+#dribbble-contact,
+#twitter-contact {
+  cursor: pointer;
+}
+#linkedin-contact:hover span,
+#linkedin-contact:hover p {
+  color: #0077b5;
+}
+#facebook-contact:hover span,
+#facebook-contact:hover p {
+  color: #365899;
+}
+#dribbble-contact:hover span,
+#dribbble-contact:hover p {
+  color: #ea4c89;
+}
+#twitter-contact:hover span,
+#twitter-contact:hover p {
+  color: #1da1f2;
+}
+.contact-content span {
+  font-size: 3em;
+  transition: all 0.5s ease-in-out;
+}
+.contact-content p {
+  font-size: 1em;
+  margin-top: 0.5em;
+  font-weight: 300;
+  transition: all 0.5s ease-in-out;
+}
+#other-contact {
+  margin-top: 4em;
 }
 .skills-header p {
   font-size: 1.5em;
@@ -441,6 +504,39 @@ hr {
   -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
   -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?h97fkx");
+  src: url("../fonts/icomoon.eot?h97fkx#iefix") format('embedded-opentype'), url("../fonts/icomoon.ttf?h97fkx") format('truetype'), url("../fonts/icomoon.woff?h97fkx") format('woff'), url("../fonts/icomoon.svg?h97fkx#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+/* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+/* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-facebook:before {
+  content: "\e05d";
+}
+.icon-twitter:before {
+  content: "\e05e";
+}
+.icon-linkedin:before {
+  content: "\e062";
+}
+.icon-dribbble:before {
+  content: "\e063";
 }
 @-moz-keyframes cd-bounce-in {
   0% {

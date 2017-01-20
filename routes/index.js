@@ -27,4 +27,13 @@ router.get('/skills', function(req, res, next) {
   res.render('skills', {path: req.path});
 })
 
+router.get('/about', function(req, res, next) {
+  res.render('about', {path: req.path});
+})
+
+router.get('/contact', function(req, res, next) {
+  res.render('contact', {path: req.path});
+})
+
+
 module.exports = router;
