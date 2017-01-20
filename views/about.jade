@@ -1,0 +1,77 @@
+extends layout
+
+block content
+  .container-fluid.page-header
+    .row
+      .col-md-12.text-center
+        
+        h1.page-title Hello
+        .divider
+        p.page-subtitle I am Yiwen Zhang
+        img.me(src="images/me.jpg")
+
+  .container
+    .row.about-section
+      .col-md-12.text-center
+
+        svg.lnr.lnr-earth
+          use(xlink:href="#lnr-earth")
+
+      .col-md-8.col-md-offset-2.text-center
+        h4 I was born in 
+          span
+            i China.
+        h4 I moved to 
+          span
+            i Singapore 
+          | when I was 15 years old. 
+        h4 Currently I am studying in 
+          span 
+            i Pittsburgh, USA
+          | .
+    
+    .row.about-section
+      .col-md-12.text-center
+        svg.lnr.lnr-graduation-hat
+          use(xlink:href="#lnr-graduation-hat")
+      .col-md-8.col-md-offset-2.text-center
+        h4 I have a bachelor degree in 
+          span
+            i Computer Science 
+          | from 
+          span
+            i National University of Singapore
+          |.
+        h4 I am now pursuing 
+          span
+            i Master of Entertainment Technology 
+          | in 
+          span
+            i Carnegie Mellon University
+          |.
+    
+    .row.about-section
+      .col-md-12.text-center
+        svg.lnr.lnr-star
+          use(xlink:href="#lnr-star")
+      .col-md-8.col-md-offset-2.text-center
+        h4 I love 
+          span
+            i traveling
+          | , 
+          span
+            i improvisational acting 
+          | and 
+          span
+            i simulation games
+        h4 I also have strong interest in 
+          span
+            i Virtual Reality
+          |.
+      .row.about-section
+        .col-md-8.col-md-offset-2.text-center
+          h2 Nice to meet you.
+          h2 很高兴认识你。
+          h2 初めまして。
+
+    
