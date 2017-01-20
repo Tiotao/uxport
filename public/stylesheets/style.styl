@@ -532,3 +532,55 @@ img.me
 .icon-dribbble:before {
   content: "\e063";
 }
+
+@-webkit-keyframes flow-40
+	0% {
+		bottom:20%;
+		opacity: 0
+	}
+	20% {
+		opacity: 0.2
+	}
+	80% {
+		opacity: 0.2
+	}
+	100%{ 
+		bottom:100%;
+		opacity: 0
+	}
+
+@-webkit-keyframes flow-60
+	0% {
+		bottom:20%;
+		opacity: 0
+	}
+	20% {
+		opacity: 0.4
+	}
+	80% {
+		opacity: 0.4
+	}
+	100%{ 
+		bottom:100%;
+		opacity: 0;
+	}
+
+
+.char-40 
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	-webkit-animation-name: flow-40; 
+	-webkit-animation-duration: 60s; 
+	-webkit-animation-iteration-count: infinite;
+	background-image: url('../images/kanji-01.png');
+	
+
+.char-80
+	height: 80px;
+	width: 80px;
+	position: absolute;
+	-webkit-animation-name: flow-60; 
+	-webkit-animation-duration: 40s; 
+	-webkit-animation-iteration-count: infinite;
+	background-image: url('../images/kanji-02.png');
