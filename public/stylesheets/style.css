@@ -93,7 +93,7 @@ canvas.particles-js-canvas-el {
 }
 @media (min-width: 768px) {
   .page-header {
-    padding: 2em;
+    padding: 4em;
   }
 }
 hr {
@@ -105,6 +105,7 @@ hr {
 @media (min-width: 768px) {
   .landing-project-listing {
     padding: 4em;
+    padding-top: 1em;
   }
 }
 .project:hover {
